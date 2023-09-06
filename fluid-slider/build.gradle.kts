@@ -1,7 +1,7 @@
 plugins {
     id("com.android.library")
     id("org.jetbrains.kotlin.android")
-    id("kotlin-kapt")
+    id("kotlin-kapt") // for LiveData
 }
 
 android {
@@ -10,7 +10,6 @@ android {
 
     defaultConfig {
         minSdk = 16
-        targetSdk = 34
     }
     buildTypes {
         release {
@@ -35,5 +34,4 @@ android {
 }
 
 dependencies {
-    implementation("androidx.appcompat:appcompat:1.6.1")
 }

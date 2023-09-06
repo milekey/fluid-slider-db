@@ -1,7 +1,7 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
-    id("kotlin-kapt")
+    id("kotlin-kapt") // for data binding in Kotlin
 }
 
 android {
@@ -13,7 +13,7 @@ android {
         minSdk = 22
         targetSdk = 34
         versionCode = 1
-        versionName = "1.0.20230901"
+        versionName = "1.0.20230906"
 
         vectorDrawables {
             useSupportLibrary = true
@@ -44,7 +44,6 @@ android {
 
 dependencies {
     implementation("androidx.appcompat:appcompat:1.6.1")
-    implementation("androidx.lifecycle:lifecycle-extensions:2.2.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
 
     implementation(project(":fluid-slider"))
