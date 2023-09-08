@@ -78,6 +78,6 @@ Here are the attributes you can specify through XML or related setters:
 
 ## 📄 License
 
-Fluid Slider (FluidSlider.kt) was originally released from Ramotion (https://github.com/Ramotion/fluid-slider-android); rivised by milekey under the MIT license.
+Fluid Slider (FluidSlider.kt) was originally released from Ramotion (https://github.com/Ramotion/fluid-slider-android); reviced by milekey under the MIT license.
 
 See [LICENSE](./LICENSE.txt) for details.
