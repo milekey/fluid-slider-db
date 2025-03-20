@@ -13,7 +13,7 @@ android {
         minSdk = 22
         targetSdk = 34
         versionCode = 1
-        versionName = "1.0.20230908"
+        versionName = "1.0.20250320"
     }
 
     buildTypes {
@@ -39,8 +39,8 @@ android {
 }
 
 dependencies {
-    implementation("androidx.appcompat:appcompat:1.6.1")
-    implementation("androidx.constraintlayout:constraintlayout:2.1.4")
+    implementation("androidx.appcompat:appcompat:1.7.0")
+    implementation("androidx.constraintlayout:constraintlayout:2.2.1")
 
     implementation(project(":fluid-slider"))
 }
