@@ -5,6 +5,7 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MediatorLiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import kotlin.math.roundToInt
 
 class MainViewModel : ViewModel() {
 
@@ -63,16 +64,10 @@ class MainViewModel : ViewModel() {
         changeList()
         _current = MediatorLiveData()
         _current.addSource(_list) { list: List<String> ->
-            _current.setValue(
-                list[Math.round(
-                    _position.value!! * (list.size - 1)
-                )]
-            )
+            _current.value = list[(_position.value!! * (list.size - 1)).roundToInt()]
         }
         _current.addSource(_position) { position: Float ->
-            _current.setValue(
-                _list.value!![Math.round(position * (_list.value!!.size - 1))]
-            )
+            _current.value = _list.value!![(position * (_list.value!!.size - 1)).roundToInt()]
         }
     }
 
