@@ -49,9 +49,9 @@ class MainViewModel : ViewModel() {
 
     private fun changeList() {
         when (count % 3) {
-            1 -> _list.setValue(ALPHABET)
-            2 -> _list.setValue(CLOCK)
-            else -> _list.setValue(NUMBER)
+            1 -> _list.value = ALPHABET
+            2 -> _list.value = CLOCK
+            else -> _list.value = NUMBER
         }
         ++count
 
