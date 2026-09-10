@@ -1,7 +1,7 @@
 plugins {
     id("com.android.library")
 
-    alias(libs.plugins.android.legacy.kapt) // for LiveData
+    id("com.android.legacy-kapt") // for LiveData
 }
 
 android {
